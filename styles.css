@@ -215,7 +215,7 @@ h1, .portfolio > h2 {
 .catalog-hero h1 {
   margin: 0;
   font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
-  font-size: clamp(72px, 13vw, 170px);
+  font-size: clamp(64px, 9vw, 120px);
   line-height: .78;
   font-weight: 400;
   letter-spacing: -.065em;
