@@ -192,8 +192,8 @@ h1, .portfolio > h2 {
 }
 
 .catalog-hero {
-  padding-top: clamp(82px, 11vw, 150px);
-  padding-bottom: clamp(72px, 9vw, 120px);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .project-kicker {
