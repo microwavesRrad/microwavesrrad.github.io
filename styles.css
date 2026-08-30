@@ -3,7 +3,7 @@
   --ink: #171717;
   --line: #c7c4bb;
   --page: 1180px;
-  --gutter: clamp(22px, 5vw, 72px);
+  --gutter: clamp(22px, 5vw, 70px);
 }
 
 * { box-sizing: border-box; }
