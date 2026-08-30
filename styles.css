@@ -57,8 +57,8 @@ a:hover { text-decoration-thickness: 1.5px; }
 .menu-close { display: none; }
 
 .intro {
-  padding-top: clamp(72px, 10vw, 150px);
-  padding-bottom: clamp(72px, 10vw, 140px);
+  padding-top: 24px;
+  padding-bottom: 28px;
 }
 
 .intro-copy { max-width: 590px; }
