@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Anna Sulkko — hobby art and data visualizations.">
-  <title>anna sulkko</title>
+  <meta name="description" content="Anna Sulkko — catalog, a tiny neighborhood archive for the cats we meet.">
+  <title>anna sulkko — catalog</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="catalog-home">
   <header class="site-header">
     <a class="wordmark" href="#top" aria-label="Anna Sulkko home">anna sulkko</a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -16,12 +16,32 @@
     </button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="catalog/">catalog</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">about</a>
+      <a href="art/">art</a>
+      <a href="#contact">contact</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="intro page-width" aria-labelledby="about-title">
+    <section class="catalog-hero page-width" aria-labelledby="catalog-title">
+      <p class="project-kicker">featured project</p>
+      <div class="catalog-hero-grid">
+        <div>
+          <h1 id="catalog-title">catalog</h1>
+          <p class="catalog-deck">a tiny neighborhood archive for the cats we meet.</p>
+        </div>
+        <div class="catalog-intro">
+          <p>Log an encounter, leave a field note, and slowly build a map of recurring neighborhood cats.</p>
+          <p>Locations are intentionally approximate. The prototype is designed to remember the cat without mapping anyone’s front door.</p>
+          <div class="project-links">
+            <a class="project-button" href="catalog/">open catalog</a>
+            <a class="text-link" href="art/">view art portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro page-width" aria-labelledby="about-title" id="about" class="homepage-about">
       <div class="intro-copy">
         <h1 id="about-title">About</h1>
         <p>This webpage is dedicated to my hobby art and data visualizations.</p>
@@ -32,63 +52,43 @@
       </div>
     </section>
 
-    <section class="featured-work page-width" aria-label="Featured artwork">
-      <figure class="artwork artwork-portrait">
-        <img
-          src="assets/c-osmosis.png"
-          alt="c.osmosis, abstract geometric artwork by Anna Sulkko"
-          loading="eager">
-        <figcaption>Figure 1. c.osmosis sep24</figcaption>
-      </figure>
+    <section class="catalog-feature page-width" aria-labelledby="live-title">
+      <div class="section-line-heading">
+        <h2 id="live-title">Live prototype</h2>
+        <span>(^. .^)⟆</span>
+      </div>
 
-      <figure class="artwork artwork-portrait">
-        <img
-          src="assets/lottery-dance.jpeg"
-          alt="l.ottery dance, mirrored dancing figures by Anna Sulkko"
-          loading="lazy">
-        <figcaption>Figure 2. l.ottery dance sep24</figcaption>
-      </figure>
+      <div class="catalog-frame-wrap">
+        <iframe
+          class="catalog-frame"
+          src="catalog/"
+          title="catalog — interactive neighborhood cat map"
+          loading="eager"
+          allow="geolocation">
+        </iframe>
+      </div>
+
+      <p class="frame-note">
+        The prototype currently stores sightings in your own browser. Shared neighborhood sightings are the next step.
+      </p>
     </section>
 
-    <section class="portfolio page-width" aria-labelledby="portfolio-title">
-      <h2 id="portfolio-title">Portfolio</h2>
-
-      <figure class="artwork portfolio-item">
-        <img
-          src="assets/auguring-agar.png"
-          alt="au.guring agar, mirrored black birds and geometric forms by Anna Sulkko"
-          loading="lazy">
-        <figcaption>Figure 3. au.guring agar oct24</figcaption>
-      </figure>
-
-      <figure class="artwork portfolio-item">
-        <img
-          src="assets/betulaceae.jpeg"
-          alt="betulaceae, yellow-green abstract botanical artwork by Anna Sulkko"
-          loading="lazy">
-        <figcaption>Figure 4. betulaceae oct24</figcaption>
-      </figure>
-
-      <figure class="artwork portfolio-item artwork-wide">
-        <img
-          src="assets/object-oriented-abstraction.png"
-          alt="object-oriented abstraction, orange and black geometric artwork by Anna Sulkko"
-          loading="lazy">
-        <figcaption>Figure 5. object-oriented abstraction oct24</figcaption>
-      </figure>
-
-      <figure class="artwork portfolio-item">
-        <img
-          src="assets/flux.jpeg"
-          alt="flux, an interpretation of James Clerk Maxwell by Anna Sulkko"
-          loading="lazy">
-        <figcaption>Figure 6. flux</figcaption>
-      </figure>
-
-      <div class="work-note">
-        <p>my interpretation of james clerk maxwell.</p>
-        <p>maxwell’s equations are true magic.</p>
-      </div>
+    <section class="project-notes page-width" aria-label="About catalog">
+      <article>
+        <p class="project-kicker">01</p>
+        <h2>small on purpose</h2>
+        <p>Catalog begins with one simple act: you met a cat. A name is optional; a note, personality, or marking can be enough to recognize the same cat later.</p>
+      </article>
+      <article>
+        <p class="project-kicker">02</p>
+        <h2>approximate by design</h2>
+        <p>Sighting coordinates are deliberately fuzzed before they are stored, keeping the map useful without turning it into a directory of exact addresses.</p>
+      </article>
+      <article>
+        <p class="project-kicker">03</p>
+        <h2>still becoming</h2>
+        <p>The next version can connect repeat encounters into cat profiles, show a last-seen history, and share sightings between visitors.</p>
+      </article>
     </section>
   </main>
 
@@ -96,7 +96,7 @@
     <div class="page-width footer-grid">
       <div class="footer-statement">
         <p class="footer-name">anna sulkko</p>
-        <p>art made free of generative ai in adobe illustrator.</p>
+        <p>art, small experiments, and data-shaped things.</p>
       </div>
       <div>
         <h2>Location</h2>
