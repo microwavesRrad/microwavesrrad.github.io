@@ -615,3 +615,21 @@ h1, .portfolio > h2 {
   font-size: 15px;
   line-height: 1.7;
 }
+.blog-photo {
+  max-width: 620px;
+  margin: 36px 0;
+}
+
+.blog-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.blog-photo figcaption {
+  margin-top: 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #6b8186;
+}
