@@ -633,3 +633,6 @@ h1, .portfolio > h2 {
   line-height: 1.4;
   color: #6b8186;
 }
+.blog-spacer {
+  height: 50px;
+}
